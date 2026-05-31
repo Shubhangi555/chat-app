@@ -1,7 +1,7 @@
 import { useState, FormEvent } from 'react';
 import { useAuth } from '../context/AuthContext';
 
-const API = '/auth';
+const API = import.meta.env.VITE_API_URL || '';
 
 export function AuthPage() {
   const [mode, setMode] = useState<'login' | 'register'>('login');

@@ -85,7 +85,7 @@ export function App() {
     ];
 
     return () => unsubs.forEach(fn => fn());
-  }, [token, on, activeRoomId]);
+  }, [token, on ]);
 
   // ─── Actions ────────────────────────────────────────────────────────────────
   const handleSelectRoom = useCallback((room: Room) => {

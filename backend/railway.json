@@ -3,6 +3,6 @@
     "builder": "NIXPACKS"
   },
   "deploy": {
-    "startCommand": "npm run build && npm start"
+    "startCommand": "node dist/server.js"
   }
 }

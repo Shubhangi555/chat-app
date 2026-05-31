@@ -1,7 +1,7 @@
 import { useEffect, useRef, useCallback, useState } from 'react';
 import { WSEventType, WSEvent } from '../types';
 
-const WS_URL = 'ws://localhost:4000/ws';
+const WS_URL = import.meta.env.VITE_WS_URL || 'ws://localhost:4000/ws';
 const RECONNECT_DELAY_MS = 3000;
 const MAX_RECONNECT_ATTEMPTS = 5;
 

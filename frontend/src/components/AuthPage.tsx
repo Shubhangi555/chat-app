@@ -18,7 +18,7 @@ export function AuthPage() {
     setLoading(true);
 
     try {
-      const endpoint = mode === 'login' ? `${API}/login` : `${API}/register`;
+      const endpoint = mode === 'login' ? `${API}/auth/login` : `${API}/auth/register`;
       const body = mode === 'login'
         ? { username, password }
         : { username, password, displayName: displayName || username };
